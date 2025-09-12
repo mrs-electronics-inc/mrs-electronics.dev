@@ -5,22 +5,19 @@ import starlightBlog from 'starlight-blog'
 
 // https://astro.build/config
 export default defineConfig({
+	site: "https://mrs-electronics.dev",
 	integrations: [
 		starlight({
 			plugins: [starlightBlog()],
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: 'MRS Developers',
+			social: [
+				{ icon: 'github', label: 'GitHub', href: 'https://github.com/mrs-electronics-inc' },
+				{ icon: 'gitlab', label: 'GitLab', href: 'https://gitlab.com/mrs-electronics' },
+			],
 			sidebar: [
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'Blog',
+					autogenerate: { directory: 'blog' },
 				},
 			],
 		}),

@@ -1,36 +1,28 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: MRS Developers
+description: The home page for MRS developer content.
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: The home page for MRS developer content!
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/MRS-Logo.png
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Blog
+      link: /blog
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
 
-## Next steps
+## Useful Links
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+	<Card title="Open Source Projects" icon="seti:json">
+		<LinkCard title="bots" href="https://github.com/mrs-electronics-inc/bots" />
+		<LinkCard title="mrs-sdk-qt" href="https://github.com/mrs-electronics-inc/mrs-sdk-qt" />
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Documentation Sites" icon="open-book">
+		<LinkCard title="NeuralPlex" href="https://neuralplex.dev" />
+		<LinkCard title="MConn" href="https://mconn.dev" />
 	</Card>
 </CardGrid>
