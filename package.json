@@ -1,5 +1,6 @@
 {
-  "name": "",
+  "name": "@mrs-electronics/dev-site",
+  "private": true,
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,8 +11,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.35.2",
-    "astro": "^5.6.1",
+    "@astrojs/starlight": "^0.37.1",
+    "astro": "^5.16.5",
     "sharp": "^0.34.2",
     "starlight-blog": "^0.24.1"
   }
