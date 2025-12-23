@@ -13,22 +13,32 @@ authors:
 
 _but it doesn't mean you'll get automatic buy-in_
 
+<!-- TODO: Expand this section with narrative and examples like 2024 structure -->
 - Mention new site mrs-electronics.dev
 - Mention the drawbacks of copy-and-paste as the go-to for setting up new projects
+
+## Automated tooling is essential
+
+_use it wherever you can_
+
+<!-- TODO: Expand this section with narrative and examples like 2024 structure -->
+- Just files
+- Linters
+- Formatters
+- Go lang is great because it has great automated tooling built in
 
 ## LLM-based tooling can be a huge productivity boost
 
 _but it should be embraced cautiously_
 
+<!-- TODO: Expand this section with narrative and examples like 2024 structure -->
 - Mention initial experiments with aider.chat
 - Mention opencode.ai
 - Mention ampcode.com
 - Mention code review bot
 
-## Something about open source
-
-_some tagline below it_
-
 ## Conclusion
+
+<!-- TODO: Write closing paragraph -->
 
 Something to wrap it all up.
