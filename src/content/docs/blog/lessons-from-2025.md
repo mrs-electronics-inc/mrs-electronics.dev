@@ -53,6 +53,10 @@ _shorter feedback loops let developers move faster with confidence_
 - Mention initial experiments with aider.chat - INCLUDE LINK
 - Mention opencode.ai - INCLUDE LINK
 - Mention ampcode.com - INCLUDE LINK
+- Mention into new habit of adding AGENTS.md to most projects
+  - useful place to store llm "memorires" after they make mistakes
+- Mention specture system - https://github.com/specture-system/specture
+  - new system for spec-drive software architecture
 
 ## Open Source is Shared Progress
 
