@@ -7,7 +7,9 @@ authors:
   picture: https://avatars.githubusercontent.com/u/17209828?s=200
 ---
 
-2025 was a year of transition for the MRS Software Team. We went from six members in the summer of 2024 to two members in the summer of 2025. We've got the support of several others at MRS who can write code, but it's been a big adjustment to learn how to optimize our workflows to continue to produce high quality software at a steady rate with fewer engineers.
+In 2024 and early 2025, we faced the departure of four well-regarded colleagues. It was a lot to absorb, and we started out 2025 with a good amount of uncertainty. There were fewer engineers per project and less review bandwidth to go around. We also lost a lot of accumulated expertise. How would we establish ourselves moving forward?
+
+We did not want to compromise on the quality or consistency of our output, so we focused on leverage. For us, that meant using standardization and automated tooling to amplify our work. We also started an exciting open source initiative, which acted as a big morale boost.
 
 ## Standardization
 
@@ -80,7 +82,7 @@ From the start, we saw the need to create some sort of force multiplier (TODO: U
 
 _a shared place for fixes and features_
 
-<!-- TODO: add introduction -->
+<!-- TODO: add introduction - mention morale boost first mentioned in the intro -->
 
 ### Customer SDKs
 
