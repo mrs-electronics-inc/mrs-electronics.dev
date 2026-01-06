@@ -9,33 +9,66 @@ authors:
 
 2025 was a year of transition for the MRS Software Team. We went from six members in the summer of 2024 to two members in the summer of 2025. We've got the support of several others at MRS who can write code, but it's been a big adjustment to learn how to optimize our workflows to continue to produce high quality software at a steady rate with fewer engineers.
 
-## Establishing documentation habits is worth it
+## Standardization Enables Leverage
 
-_but it doesn't mean you'll get automatic buy-in_
+_a smooth path is easier to walk than a bumpy one_
 
 <!-- TODO: Expand this section with narrative and examples like 2024 structure -->
-- Mention new site mrs-electronics.dev
+
+### Project Management
+
 - Mention the drawbacks of copy-and-paste as the go-to for setting up new projects
+- Mention standard repo setup across GitLab/GitHub (we now have internal templates/checklists for each new repo)
+  - Mention repo template - https://github.com/mrs-electronics-inc/basic-template
 
-## Automated tooling is essential
+### Documentation
 
-_use it wherever you can_
+- Mention embracing Astro framework
+- Mention new site mrs-electronics.dev
+- Mention project doc site and docs template - https://github.com/mrs-electronics-inc/docs-template
+
+## Automated Tooling Increases Leverage
+
+_shorter feedback loops let developers move faster with confidence_
 
 <!-- TODO: Expand this section with narrative and examples like 2024 structure -->
+
+### Code Review Feedback Loops (CI/CD)
+
+- CI/CD: building APKs for app releases
+- CI/CD: running automated tests on merge/pull requests for active projects
+- Code review bot: fast feedback on simple mistakes (e.g., misconfigured CI/CD yaml)
+
+### Local Dev Feedback Loops
+
 - Just files
 - Linters
 - Formatters
 - Go lang is great because it has great automated tooling built in
 
-## LLM-based tooling can be a huge productivity boost
+### Implementation Feedback Loops (AI Agents)
 
-_but it should be embraced cautiously_
+- AI agents: faster way to type code - take ideas from brain to code FASTER
+- Mention openrouter.ai - INCLUDE LINK
+- Mention initial experiments with aider.chat - INCLUDE LINK
+- Mention opencode.ai - INCLUDE LINK
+- Mention ampcode.com - INCLUDE LINK
+
+## Open Source is Shared Progress
+
+_a shared place for fixes and features_
 
 <!-- TODO: Expand this section with narrative and examples like 2024 structure -->
-- Mention initial experiments with aider.chat
-- Mention opencode.ai
-- Mention ampcode.com
-- Mention code review bot
+
+### Customer SDKs
+
+- Customer SDKs: shared code customers can pull from (and maybe contribute to)
+- Customer SDKs: central place for bug fixes and new features
+
+### Developer Tools
+
+- Developer tools: creative outlet for helper apps (e.g., time-tracker - INCLUDE LINK)
+- Developer tools: CI/CD tooling and bots that improve developer quality of life - INCLUDE LINK to bots repo
 
 ## Conclusion
 
