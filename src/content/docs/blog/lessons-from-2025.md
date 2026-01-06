@@ -11,17 +11,28 @@ authors:
 
 ## Standardization
 
-_a smooth path is easier to walk than a bumpy one_
+_a smooth and consistent path is easier to walk than a rough and chaotic one_
 
-<!-- TODO: Expand this section with narrative and examples like 2024 structure -->
+Standardization was a big focus of 2025. The goal was to reduce the difference
+
+<!-- TODO: flesh out introduction -->
 
 ### Project Management
 
-- Mention the drawbacks of copy-and-paste as the go-to for setting up new projects
+In 2025, we made good progress on standardizing our project management practices. We have developed a set of best practices through trial and experience across different projects the past few years, and it was time to apply them consistently, so every project could benefit from a more efficient workflow. Of course, every project has its own unique constraints, requirements, and team. We don't have a NEED BETTER WORDING HERE system that we treat as law. Instead, we have developed a set of general project management best practices including things like: how to label issues, how to merge changes, how to handle branching, and how to handle deployments.
+
+<!-- TODO -->
+
 - Mention standard repo setup across GitLab/GitHub (we now have internal templates/checklists for each new repo)
   - Mention repo template - https://github.com/mrs-electronics-inc/basic-template
+- Mention future of integrating GitLab custom fields and status - include link to docs
+- Mention specture system - https://github.com/specture-system/specture
+  - new system for spec-drive software architecture
+  - focused on projects that have single/few devs and a lot of agent-based development
 
 ### Documentation
+
+<!-- TODO -->
 
 - Mention embracing Astro framework
 - Mention new site mrs-electronics.dev
@@ -29,17 +40,24 @@ _a smooth path is easier to walk than a bumpy one_
 
 ## Automated Tooling
 
-_shortens feedback loops so developers move faster with confidence_
+_shortens feedback loops, so developers move faster with confidence_
 
-<!-- TODO: Expand this section with narrative and examples like 2024 structure -->
+From the start, we saw the need to create some sort of force multiplier (TODO: USE BETTER WORDING) for our team. Automated tooling is a powerful tool for leverage.
+
+<!-- TODO: flesh out introduction -->
 
 ### Integration
 
-- CI/CD: building APKs for app releases
+<!-- TODO -->
+
+- CI/CD: team dove into Docker and containerization at the beginning of the year
 - CI/CD: running automated tests on merge/pull requests for active projects
+- CI/CD: building APKs for mobile app releases
 - Code review bot: fast feedback on simple mistakes (e.g., misconfigured CI/CD yaml)
 
 ### Local Development
+
+<!-- TODO -->
 
 - Just files
 - Linters
@@ -48,6 +66,8 @@ _shortens feedback loops so developers move faster with confidence_
 
 ### Implementation
 
+<!-- TODO -->
+
 - AI agents: faster way to type code - take ideas from brain to code FASTER
 - Mention openrouter.ai - INCLUDE LINK
 - Mention initial experiments with aider.chat - INCLUDE LINK
@@ -55,21 +75,23 @@ _shortens feedback loops so developers move faster with confidence_
 - Mention ampcode.com - INCLUDE LINK
 - Mention into new habit of adding AGENTS.md to most projects
   - useful place to store llm "memorires" after they make mistakes
-- Mention specture system - https://github.com/specture-system/specture
-  - new system for spec-drive software architecture
 
 ## Open Source
 
 _a shared place for fixes and features_
 
-<!-- TODO: Expand this section with narrative and examples like 2024 structure -->
+<!-- TODO: add introduction -->
 
 ### Customer SDKs
+
+<!-- TODO -->
 
 - Customer SDKs: shared code customers can pull from (and maybe contribute to)
 - Customer SDKs: central place for bug fixes and new features
 
 ### Developer Tools
+
+<!-- TODO -->
 
 - Developer tools: creative outlet for helper apps (e.g., time-tracker - INCLUDE LINK)
 - Developer tools: CI/CD tooling and bots that improve developer quality of life - INCLUDE LINK to bots repo
