@@ -15,22 +15,19 @@ We did not want to compromise on the quality or consistency of our output, so we
 
 _a smooth and consistent path is easier to walk than a rough and chaotic one_
 
-Standardization was a big focus of 2025. The goal was to reduce the difference
-
-<!-- TODO: flesh out introduction -->
+Standardization was a big focus of 2025. Each project did project management differently, and there was no clarity for what to use for new projects. We also had a generally low bar for documentation across most of our projects.
 
 ### Project Management
 
-In 2025, we made good progress on standardizing our project management practices. We have developed a set of best practices through trial and experience across different projects the past few years, and it was time to apply them consistently, so every project could benefit from a more efficient workflow. Of course, every project has its own unique constraints, requirements, and team. We don't have a NEED BETTER WORDING HERE system that we treat as law. Instead, we have developed a set of general project management best practices including things like: how to label issues, how to merge changes, how to handle branching, and how to handle deployments.
+In 2025, we made great progress in standardizing our project management practices. We have developed a set of best practices through trial-and-error across different projects the past few years, but they had only been shared through ad-hoc communication between engineers. It was time to document the best practices and apply them consistently, so every active project could benefit from a more efficient workflow. This improved our workflow on existing projects and made it much easier to get started with new projects. Before, there was uncertainity on how to configure each setting for a new project, leading to decision fatigue and wasted time. Now we have a pre-set package of settings we have discussed, tested, and know work well for us, allowing us to configure a new repo within minutes.
 
-<!-- TODO -->
+Of course, every project has its own unique constraints, requirements, and team. We don't have a rigid system that we treat as law. Instead, we have developed a set of general project management best practices including things like: how to label issues, how to merge changes, how to handle branching, and how to handle deployments.
 
-- Mention standard repo setup across GitLab/GitHub (we now have internal templates/checklists for each new repo)
-  - Mention repo template - https://github.com/mrs-electronics-inc/basic-template
-- Mention future of integrating GitLab custom fields and status - include link to docs
-- Mention specture system - https://github.com/specture-system/specture
-  - new system for spec-drive software architecture
-  - focused on projects that have single/few devs and a lot of agent-based development
+To make getting a new repository off the ground very easy, we created internal check lists for both GitLab and GitHub. These cover things like: branch protection rules, repository settings that we change from the defaults, and setting up integrations like the [code review bot](https://github.com/mrs-electronics-inc/bots/blob/main/docs/code-review-bot-setup.md). We also created a couple helpful repository templates for our GitHub projects. One focused on docs repositories - [docs-template](https://github.com/mrs-electronics-inc/docs-template), and one for any new open source repository - [basic-template](https://github.com/mrs-electronics-inc/basic-template).
+
+We open sourced the [issue-bot](https://github.com/mrs-electronics-inc/bots/tree/main?tab=readme-ov-file#issue-management-), our internal tool for helping us manage issues by reminding us of things like missing labels or incorrectly formatted issue titles. Currently, it only is available for GitLab, but in the future we would like to add support for GitHub. We are also interested in adding support for [GitLab Statuses](https://docs.gitlab.com/user/work_items/status/) (replacing our current practice of using scoped status labels) and finding interesting use cases for [GitLab Custom Fields](https://docs.gitlab.com/user/work_items/custom_fields/).
+
+Going forward, I'm excited to experiment with using the [Specture System](https://github.com/specture-system/specture) for some of our projects. Specture is based on some basic strategies I've found to work well with AI agents after some experimentation in the past few months. The basic idea is a spec-driven approach, where designs are documented in the git repo in simple markdown files, rather than scattered across GitLab or GitHub issue descriptions and comments. It seems like it will work best for projects with very small teams and a lot of AI agent usage, which is a good match for many of our projects.
 
 ### Documentation
 
