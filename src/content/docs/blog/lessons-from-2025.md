@@ -19,7 +19,7 @@ Standardization was a big focus of 2025. Each project did project management dif
 
 ### Project Management
 
-In 2025, we made great progress in standardizing our project management practices. We have developed a set of best practices through trial-and-error across different projects the past few years, but they had only been shared through ad-hoc communication between engineers. It was time to document the best practices and apply them consistently, so every active project could benefit from a more efficient workflow. This improved our workflow on existing projects and made it much easier to get started with new projects. Before, there was uncertainity on how to configure each setting for a new project, leading to decision fatigue and wasted time. Now we have a pre-set package of settings we have discussed, tested, and know work well for us, allowing us to configure a new repo within minutes.
+In 2025, we made great progress in standardizing our project management practices. We have developed a set of best practices through trial-and-error across different projects the past few years, but they had only been shared through ad-hoc communication between engineers. It was time to document the best practices and apply them consistently, so every active project could benefit from a more efficient workflow. This improved our workflow on existing projects and made it much easier to get started with new projects. Before, there was uncertainty on how to configure each setting for a new project, leading to decision fatigue and wasted time. Now we have a pre-set package of settings we have discussed, tested, and know work well for us, allowing us to configure a new repo within minutes.
 
 Of course, every project has its own unique constraints, requirements, and team. We don't have a rigid system that we treat as law. Instead, we have developed a set of general project management best practices including things like: how to label issues, how to merge changes, how to handle branching, and how to handle deployments.
 
@@ -31,49 +31,56 @@ Going forward, I'm excited to experiment with using the [Specture System](https:
 
 ### Documentation
 
-<!-- TODO -->
+Another area of focus for us in standardization was in raising the bar with our documentation practices. We embraced the [Astro](https://astro.build) framework early on. We found it to be a great way to write documentation in Markdown and quickly deploy a static site.
 
-- Mention embracing Astro framework
-- Mention new site mrs-electronics.dev
-- Mention project doc site and docs template - https://github.com/mrs-electronics-inc/docs-template
+Our current strategy is to have a `docs` directory in each new software project's repository for storing the Astro docs for that project. We've found that it works really well to have the documentation for a project in the same repository as the code. The goal is that every time a pull request includes an important update or new feature, that same pull request would include the corresponding documentation update.
+
+We also created GitHub repositories dedicated to documentation for several of our hardware products (for example, [neuraplex.dev](https://neuralplex.dev) and [mconn.mrs-electronics.dev](https://mconn.mrs-electronics.dev)). Our [docs-template](https://github.com/mrs-electronics-inc/docs-template) repo serves as the starting point for these repositories.
+
+We deployed [mrs-electronics.dev](https://mrs-electronics.dev) as the home for our public-facing developer content. We use subdomains for the docs of our different projects, for example: [qt.mrs-electronics.dev](https://qt.mrs-electronics.dev) and [mconn.mrs-electronics.dev](https://mconn.mrs-electronics.dev).
+
+TODO - figure out a good way to wrap up this section and transition to the next.
 
 ## Automated Tooling
 
 _shortens feedback loops, so developers move faster with confidence_
 
-From the start, we saw the need to create some sort of force multiplier (TODO: USE BETTER WORDING) for our team. Automated tooling is a powerful tool for leverage.
+From the start, we saw the need to scale our team's capabilities. Automated tooling is a powerful tool for leverage.
 
 <!-- TODO: flesh out introduction -->
 
+- Fewer people can do more
+- Catch issues early
+- Eliminate repetitive work
+- Create consistent standards
+
 ### Integration
 
-<!-- TODO -->
-
-- CI/CD: team dove into Docker and containerization at the beginning of the year
-- CI/CD: running automated tests on merge/pull requests for active projects
-- CI/CD: building APKs for mobile app releases
+- Docker and containerization: core win across all projects
+  - Automated tests on every merge/pull request
+  - APK builds for mobile app releases (example of saved time on specific project)
 - Code review bot: fast feedback on simple mistakes (e.g., misconfigured CI/CD yaml)
 
 ### Local Development
 
-<!-- TODO -->
-
-- Just files
-- Linters
-- Formatters
-- Go lang is great because it has great automated tooling built in
+- Justfiles: standard set of commands for every new project so developers can quickly get started
+- Linters and formatters: catch mistakes before code review
+- Goal: every developer has the same commands available, same linters running, same formatters applied consistently
+- Go Lang: modern example of great built-in tooling (gofmt, govet, etc.)
+  - Contrast with C++: complicated and fragmented tooling
+  - Learning Go for internal CLI/TUI helpers has shown the power of well-designed tooling
 
 ### Implementation
 
-<!-- TODO -->
-
-- AI agents: faster way to type code - take ideas from brain to code FASTER
-- Mention openrouter.ai - INCLUDE LINK
-- Mention initial experiments with aider.chat - INCLUDE LINK
-- Mention opencode.ai - INCLUDE LINK
-- Mention ampcode.com - INCLUDE LINK
-- Mention into new habit of adding AGENTS.md to most projects
-  - useful place to store llm "memorires" after they make mistakes
+- AI agents allow us to quickly prototype new ideas
+- Save tons of time with tedious work, so we can focus on designing features
+- Things that make AI agents work well (good docs, good dev tooling) are also useful for human developers
+- Experimented with different AI agents throughout 2025:
+  - Aider: initial experiments
+  - OpenCode: expanded toolkit
+  - Ampcode: current primary tool
+- Links: openrouter.ai, aider.chat, opencode.ai, ampcode.com
+- Adding AGENTS.md to most projects: store LLM "memories" after mistakes, useful for future AI agents and human developers
 
 ## Open Source
 
