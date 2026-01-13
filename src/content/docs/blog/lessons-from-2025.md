@@ -55,7 +55,7 @@ It's important to reduce the feedback loop for the integration cycle. You can ha
 
 Early in the year, we did some team training on Docker and containerization. This discussion led to much more widespread usage of Docker containers and CI/CD pipelines across our projects. Our CI/CD pipelines protect us from all kinds of mistakes. We run linters, formatting checks, and automated test suites on every commit to most of our active projects.
 
-Another place that CI/CD can have a big impact in is deployment processes. Our web projects and docs sites have automated pipelines for every commit to `main`, and we have pipelines that automate the time-consuming process of buliding APK and AAB files for each new release in our Android projects.
+Another place that CI/CD can have a big impact in is deployment processes. Our web projects and docs sites have automated pipelines for every commit to `main`, and we have pipelines that automate the time-consuming process of building APK and AAB files for each new release in our Android projects.
 
 We also started work on our [Code Review Bot](https://github.com/mrs-electronics-inc/bots?tab=readme-ov-file#code-review-). This runs on each new pull request for most of our projects. It allows us to shorten the code review feedback loop - a human review might not be available for several hours or days, but the code review bot can give basic feedback within a few minutes. It's not perfect, and we have a lot of ideas for how to improve it in 2026, but it caught many silly mistakes for us in 2025.
 
@@ -65,11 +65,11 @@ High quality tooling for local development is essential for rapid iteration. We 
 
 One essential piece that we've begun introducing to all our projects is [just](https://github.com/casey/just). It allows us to have a self-documenting place for configuring all the common commands for a project. This is very useful for enabling new developers to get started quickly with a project - they list the just recipes and find what they need.
 
-Most of our projects have a `lint` recipe and `format` recipe in their `justfile`. These basic tools are esstential for developing consitent code as a team. There is no reason to argue about code formatting - just use what your formatter produces.
+Most of our projects have a `lint` recipe and `format` recipe in their `justfile`. These basic tools are essential for developing consistent code as a team. There is no reason to argue about code formatting - just use what your formatter produces.
 
 It is also very convient if developers don't have to remember to run the linter and formatter themselves. We have found the [pre-commit framework](https://pre-commit.com) invaluable for configuring Git hooks. It can run the linter and formatter on staged files for every new commit, and also check for things like trailing whitespace and unwanted large files.
 
-As a learning experiment, we started using Go for a few projects ([time-tracker](https://github.com/mrs-electronic--inc/time-tracker/) and [mrs-sdk-manager](https://github.com/mrs-electronics-inc/mrs-sdk-qt/tree/main/tools/mrs-sdk-manager) being two notable examples). We found the superb built-in tooling to be a breath of fresh air compared to what we are used to in older languages like C++ or Python. Go has a built-in formatter, testing framework, and package manager, which makes it very easy for a inexperienced developer to get started with new projects without getting bogged down in a complicated ecosystem.
+As a learning experiment, we started using Go for a few projects ([time-tracker](https://github.com/mrs-electronic-inc/time-tracker/) and [mrs-sdk-manager](https://github.com/mrs-electronics-inc/mrs-sdk-qt/tree/main/tools/mrs-sdk-manager) being two notable examples). We found the superb built-in tooling to be a breath of fresh air compared to what we are used to in older languages like C++ or Python. Go has a built-in formatter, testing framework, and package manager, which makes it very easy for a inexperienced developer to get started with new projects without getting bogged down in a complicated ecosystem.
 
 ### Implementation
 
