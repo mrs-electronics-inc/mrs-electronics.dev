@@ -99,7 +99,7 @@ Our previous solution for shared code across different Qt projects was copy-and-
 
 ### Developer Tools
 
-We also started work on several helpful open-source tools for improving our efficiency in our day-to-day work.
+We also started work on several helpful open source tools for improving our efficiency in our day-to-day work.
 
 [`time-tracker`](https://github.com/mrs-electronics-inc/time-tracker) is a simple app written in Go that provides both a CLI and TUI for quickly recording time entries. This is very useful for tracking the time we spend across all our different projects. We hope to introduce a web interface soon, which should make the app accessible from even more places.
 
@@ -107,4 +107,4 @@ We also started work on several helpful open-source tools for improving our effi
 
 ## Conclusion
 
-2025 was a year of big adjustments. WHAT ELSE.
+2025 was a year of big adjustments. We bore the grief of departing team members and faced uncertain prospects. We had to find creative ways to leverage the time and effort of our team to make an outsized impact. Standardization, automation, and shared open source codebases all helped to improve the effectiveness of our team, reduce inconsistencies between our projects, and shorten feedback loops. It was an exciting year of growth, and we look forward to finding more ways to continually improve our work in 2026!
