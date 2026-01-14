@@ -5,6 +5,10 @@
 - The project uses Astro; use the existing npm scripts for development, build, and preview workflows.
 - Avoid modifying files outside the repo unless explicitly requested.
 
+## Accuracy and Interaction Guidelines
+- If the user asks to “re-read” a specific line/section, **always** call the `Read` tool on the relevant range before responding.
+- Do not claim “it currently says …” (or similar) unless you have re-read the file in the current thread.
+
 ## Blog Post Editing Guidelines
 
 ### Core Principle
@@ -25,6 +29,7 @@
 
 ### What the Agent MUST NOT Do
 - **NEVER** write new content or paragraphs for the author
+- **NEVER** suggest rewrites (even if explicitly requested) since they introduce AI-generated language
 - **NEVER** rewrite passages to add new information or ideas
 - **NEVER** change the author's voice or tone without explicit discussion
 - **NEVER** edit blog files without explicit permission
