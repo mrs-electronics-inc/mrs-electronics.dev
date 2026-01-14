@@ -67,13 +67,13 @@ One essential piece that we've begun introducing to all our projects is [just](h
 
 Most of our projects have a `lint` recipe and `format` recipe in their `justfile`. These basic tools are essential for developing consistent code as a team. There is no reason to argue about code formatting - just use what your formatter produces.
 
-It is also very convient if developers don't have to remember to run the linter and formatter themselves. We have found the [pre-commit framework](https://pre-commit.com) invaluable for configuring Git hooks. It can run the linter and formatter on staged files for every new commit, and also check for things like trailing whitespace and unwanted large files.
+It is also very convenient if developers don't have to remember to run the linter and formatter themselves. We have found the [pre-commit framework](https://pre-commit.com) invaluable for configuring Git hooks. It can run the linter and formatter on staged files for every new commit, and also check for things like trailing whitespace and unwanted large files.
 
-As a learning experiment, we started using Go for a few projects ([time-tracker](https://github.com/mrs-electronic-inc/time-tracker/) and [mrs-sdk-manager](https://github.com/mrs-electronics-inc/mrs-sdk-qt/tree/main/tools/mrs-sdk-manager) being two notable examples). We found the superb built-in tooling to be a breath of fresh air compared to what we are used to in older languages like C++ or Python. Go has a built-in formatter, testing framework, and package manager, which makes it very easy for a inexperienced developer to get started with new projects without getting bogged down in a complicated ecosystem.
+As a learning experiment, we started using Go for a few projects ([time-tracker](https://github.com/mrs-electronics-inc/time-tracker/) and [mrs-sdk-manager](https://github.com/mrs-electronics-inc/mrs-sdk-qt/tree/main/tools/mrs-sdk-manager) being two notable examples). We found the superb built-in tooling to be a breath of fresh air compared to what we are used to in older languages like C++ or Python. Go has a built-in formatter, testing framework, and package manager, which makes it very easy for a inexperienced developer to get started with new projects without getting bogged down in a complicated ecosystem.
 
 ### Implementation
 
-And now we get to the inner loop of software development. How do you take an idea from your brain to code? The past year or two has seen the rise of a brand new way to convert ideas to code much faster - LLM-powered coding agents.
+And now we get to the inner loop of software development. How do you take an idea from your brain to code? The past year or two has seen the rise of a brand-new way to convert ideas to code much faster - LLM-powered coding agents.
 
 We've found coding agents to be helpful in many ways. They allow us to quickly prototype new ideas and explore new possibilities. They save a ton of time with implementing tedious refactors. WHAT ELSE
 
@@ -83,27 +83,27 @@ We tried out several different coding agents, adapting as new and better tools h
 
 [OpenRouter](https://openrouter.ai) was invaluable throughout the year. It provides an easy and effective way to access any model we want, based on the needs at hand. We used it for Aider, OpenCode, and our Code Review Bot. I like to think of the overall integration of LLMs through OpenRouter and coding agents like Aider or OpenCode as similar to a brain and a body. We can switch out the brain (the model requested from OpenRouter) based on what we need for the current task - a more expensive model like Claude Sonnet for a more challenging problem, and a cheaper model like Gemini Flash for simpler tasks. We can also switch out the body (the coding agent/LLM interface) as required - maybe OpenCode for implementing a new feature, and our Code Review Bot for reviewing the code.
 
-It has been interesting to see how our coding habits adjust as we acclimate to using code agents regularaly, and I'm sure we will continue to see lots of big improvements in the space in 2026, which will require further adjustments. One thing we have found very useful is to have a good `AGENTS.md` file in each repository. This is a good place to store LLM "memories". After the coding agent makes a mistake, have it record the correct method of doing things in `AGENTS.md`. Most tools, include OpenCode and Amp, will automatically load `AGENTS.md` and this helps tune your agents in the correct way to operate on your projects.
+It has been interesting to see how our coding habits adjust as we acclimate to using code agents regularly, and I'm sure we will continue to see lots of big improvements in the space in 2026, which will require further adjustments. One thing we have found very useful is to have a good `AGENTS.md` file in each repository. This is a good place to store LLM "memories". After the coding agent makes a mistake, have it record the correct method of doing things in `AGENTS.md`. Most tools, include OpenCode and Amp, will automatically load `AGENTS.md` and this helps tune your agents in the correct way to operate on your projects.
 
 ## Open Source
 
 _a shared place for fixes and features_
 
-<!-- TODO: add introduction - mention morale boost first mentioned in the intro -->
+In 2025, we made our first steps into publishing open source software. Our open source projects provide us with a variety of benefits, including being a better way to distribute common shared code, and a good creative outlet for our developers.
 
 ### Customer SDKs
 
-<!-- TODO -->
+Our biggest and most ambitious open source project so far is the [MRS Qt SDK](https://qt.mrs-electronics.dev). We envision this to be the first of many SDKs, each focused on a different language and/or framework. The Qt SDK is targeted at the immediate need of our developers and our customers to have a solid foundation for new Qt applications for our embedded Linux hardware.
 
-- Customer SDKs: shared code customers can pull from (and maybe contribute to)
-- Customer SDKs: central place for bug fixes and new features
+Our previous solution for shared code across different Qt projects was copy-and-paste between various repositories. This was far from ideal. Bug fixes and features would get introduced in one repository and never make it to other repositories. A centralized SDK should give us a single source of truth for Qt code optimized for working with our hardware. We can have a central place for applying bug fixes and new features, and then developers both internal and external can pull those improvements into their applications. It is a great way to reduce duplicate code across projects, and our improvements can have a larger impact as they multiply across projects.
 
 ### Developer Tools
 
-<!-- TODO -->
+We also started work on several helper applications for improving our quality-of-life in our day-to-day work.
 
-- Developer tools: creative outlet for helper apps (e.g., time-tracker - INCLUDE LINK)
-- Developer tools: CI/CD tooling and bots that improve developer quality of life - INCLUDE LINK to bots repo
+[`time-tracker`](https://github.com/mrs-electronics-inc/time-tracker) is a simple app written in Go that provides both a CLI and TUI for quickly recording time entries. This is very useful for tracking the time we spend across all our different projects. We hope to introduce a web interface soon, which should make the app accessible from even more places.
+
+[`bots`](https://github.com/mrs-electronics-inc/bots) is a collection of CI/CD tooling that we use across many of our projects. It currently consists of an Issue Management Bot and a Code Review Bot, and we plan to add more bots in the future to automate other parts of our software development process. Like the Qt SDK, the `bots` codebase is based on code that we had developed and copied-and-pasted across several projects. Having it put together in a central place with automatically built Docker images makes it much easier to maintain and distribute across projects. The bots are a great way to reduce time spent on tedious or time-consuming project management tasks, allowing our team to focus on high-impact work.
 
 ## Conclusion
 
