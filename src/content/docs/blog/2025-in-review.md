@@ -1,6 +1,6 @@
 ---
-title: Lessons from 2025
-date: 2026-01-05
+title: 2025 in Review
+date: 2026-01-19
 authors:
   name: Addison Emig
   title: Lead Software Engineer
