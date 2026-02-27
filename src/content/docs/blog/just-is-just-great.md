@@ -23,15 +23,22 @@ We needed a system that we can use on any project, no matter the language or bui
 
 ## Why `just` is great
 
-[`just`](https://just.systems) is just great, because it solves many problems with one simple file and one simple command. It is a command runner that stores all your common project commands in a single file, with the documentation inline immediately above each recipe definition.
+[`just`](https://just.systems) is just great because it solves several problems at once while keeping things simple. You only need one simple file and one simple command. `just` is a command runner that reads all your common project commands (called `recipes`) from a single file. You can also add explanation comments above each recipe and `just` will automatically include them in the help output.
+
+:::note[Why not just use npm run?]
+
+`npm run` works great for JavaScript or TypeScript projects, but not all our projects use these languages. We prefer `just` because it is language-agnostic - it can provide value in projects of just about any programming language and build system.
+:::
 
 ### Our core recipes
 
 For any of our active projects, a new developer can run `just` to get a list of the available recipes. Our core set of recipes includes:
 
-- `default` - to list recipes (this runs by default without any argument to `just` because it is the first recipe of the file)
+- `default` - to list recipes
 - `deps` - to install dependencies
-- `setup` - to run all required commands to set up a local development environment - usually installing dependencies and the [`pre-commit`](https://pre-commit.com) hooks
+- `setup` - to run all required commands to set up a local development environment
+
+`just` automatically runs the first recipe of your file if you run `just` without any arguments. We take advantage of this by always putting the `default` recipe at the top, and have it list the available recipes with `just --list`.
 
 Many of our projects also have a `test` recipe for running the automated test suite. You'll also often see at least one of `dev`, `up`, `run-mobile`, or `run-docs` for running the given project in the local development environment.
 We use `lint` and `format` recipes to trigger the correct linter and formatter for the project's programming language.
@@ -72,7 +79,4 @@ Available recipes:
 
 Having a `justfile` in every active project means that new developers can get started quickly in a project they've never worked in before. The "muscle memory" of `just` to list available recipes and `just setup` to set up the local environment makes things very convenient.
 
-:::note[Why not just use npm run?]
-
-`npm run` works great for JavaScript or TypeScript projects, but not all our projects use these languages. We prefer `just` because it is language-agnostic - it can provide value in projects of just about any programming language and build system.
-:::
+We can onboard developers to projects quicker, and we can spend more time focused on writing code rather than internal developer documentation.
