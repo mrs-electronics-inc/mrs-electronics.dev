@@ -19,7 +19,7 @@ Another problem with development scripts is documenting them. For every project,
 
 It's easy to write this documentation once and then forget to update it as your project grows.
 
-We needed a system that we can use on any project, no matter the language or build system. Something that would keep the development commands and documentations in sync.
+We needed a system that we can use on any project, no matter the language or build system. Something that would keep the development commands and related documentation in sync.
 
 ## Why `just` is great
 
@@ -27,9 +27,9 @@ We needed a system that we can use on any project, no matter the language or bui
 
 ### Our core recipes
 
-For any of our active projects, a new developer can run `just` to get a list of the available recipes. Our core set of recipes include:
+For any of our active projects, a new developer can run `just` to get a list of the available recipes. Our core set of recipes includes:
 
-- `default` - to list recipes, ran by default without any subcommand since it at the top of the file
+- `default` - to list recipes (this runs by default without any argument to `just` because it is the first recipe of the file)
 - `deps` - to install dependencies
 - `setup` - to run all required commands to set up a local development environment - usually installing dependencies and the [`pre-commit`](https://pre-commit.com) hooks
 
@@ -74,5 +74,5 @@ Having a `justfile` in every active project means that new developers can get st
 
 :::note[Why not just use npm run?]
 
-`npm run` works great for JavaScript or TypeScript projects, but not all our projects use these languages. We prefer `just` because it is language-agnostic. Our developers can build the muscle memory of `just setup` to set up their dev environment and then `just` to list available recipes. Just is great because it can provide value in projects of just about any programming language and build system.
+`npm run` works great for JavaScript or TypeScript projects, but not all our projects use these languages. We prefer `just` because it is language-agnostic - it can provide value in projects of just about any programming language and build system.
 :::
