@@ -9,13 +9,9 @@ authors:
 
 ## The Problem
 
-We work on software projects across a variety of programming languages and build systems. Some of them provide an easy way to run development scripts (for example, `npm run`), and others do not.
+We work on software projects across a variety of programming languages and build systems. Some of them provide an easy way to run development commands (for example, `npm run`), and others do not.
 
-Another problem with development scripts is documenting them. For every project, developers need to know:
-
-- how to install dependencies
-- how to run the software on their machine
-- how to run the automated test suite
+You need some way to answer the questions "How do I set this up?" and "How do I run this?". You need some form of documentation of common commands.
 
 It's easy to write this documentation once and then forget to update it as your project grows.
 
