@@ -9,21 +9,36 @@ authors:
 
 ## The Problem
 
-[Problem/friction across projects]
+We work on software projects across a variety of programming languages and build systems. Some of them provide an easy way to run development scripts (for example, `npm run`), and others do not.
+
+Another problem with development scripts is documenting them. For every project, developers need to know:
+
+- how to install dependencies
+- how to run the software on their machine
+- how to run the automated test suite
+
+It's easy to write this documentation once and then forget to update it as your project grows.
+
+We needed a system that we can use on any project, no matter the language or build system. Something that would keep the development commands and documentations in sync.
 
 ## Why `just` is great
 
-[Self-documenting commands, faster onboarding, consistency]
+[`just`](https://just.systems) is just great, because it solves many problems with one simple file and one simple command. It is a command runner that stores all your common project commands in a single file, with the documentation inline immediately above each recipe definition.
 
 ### Our core recipes
 
-[mention the core recipes we have across all projects, along with common recipes we have across many projects]
+For any of our active projects, a new developer can run `just` to get a list of the available recipes. Our core set of recipes include:
+
+- `default` - to list recipes, ran by default without any subcommand since it at the top of the file
+- `deps` - to install dependencies
+- `setup` - to run all required commands to set up a local development environment - usually installing dependencies and the [`pre-commit`](https://pre-commit.com) hooks
+
+Many of our projects also have a `test` recipe for running the automated test suite. You'll also often see at least one of `dev`, `up`, `run-mobile`, or `run-docs` for running the given project in the local development environment.
+We use `lint` and `format` recipes to trigger the correct linter and formatter for the project's programming language.
 
 ### A quick example
 
-Here is a minimal example that demonstrates all of our core recipes, along with a `dev` recipe. This is actually the current `justfile` we use for our `docs-template` repository.
-
-TODO: add links to `docs-template` repo and it's justfile.
+Here is a minimal example that demonstrates all of our core recipes, along with a `dev` recipe. This is actually the current [`justfile`](https://github.com/mrs-electronics-inc/docs-template/blob/main/justfile) from our [`docs-template`](https://github.com/mrs-electronics-inc/docs-template) repository.
 
 ```just
 # List available recipes
@@ -43,9 +58,19 @@ dev:
     npm run dev
 ```
 
+The comments above each recipe are automatically included in the output of `just --list`:
+
+```bash
+Available recipes:
+    default # List available recipes
+    deps    # Install dependencies
+    dev     # Run in development environment
+    setup   # Set up development environment
+```
+
 ## Why we’re adding a `justfile` to each of our active projects
 
-[Team standardization decision + expected benefits]
+Having a `justfile` in every active project means that new developers can get started quickly in a project they've never worked in before. The "muscle memory" of `just` to list available recipes and `just setup` to set up the local environment makes things very convenient.
 
 :::note[Why not just use npm run?]
 
