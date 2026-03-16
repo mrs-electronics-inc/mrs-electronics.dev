@@ -7,5 +7,5 @@ deps:
 	npm install
 
 # Run development server
-dev:
+run:
 	npm run dev
