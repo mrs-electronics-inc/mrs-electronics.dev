@@ -13,7 +13,7 @@ Established infrastructure can often become a black box. You don't know how it w
 
 ## The Solution
 
-Deployment scripts or [infrastructure as code](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/infrastructure-as-code) are a good way to aim for reproducible infrastructure[^1], but often you are setting up specific infrastructure that only needs to be done once. What you really need is a simple guide describing the steps.
+Deployment scripts or [infrastructure as code](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/infrastructure-as-code) are a good way to aim for reproducible infrastructure[^1], but often you are setting up specific infrastructure that only needs to be stood up once. What you really need is a simple guide describing the steps.
 
 [^1]: Personally, I'm a big fan of [Nix flakes](https://zero-to-nix.com).
 
