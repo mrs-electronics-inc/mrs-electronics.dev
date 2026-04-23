@@ -1,5 +1,5 @@
 ---
-title: Documentation Driven System Administration
+title: Docs-Driven Infrastructure
 date: 2026-04-24
 authors:
   name: Addison Emig
