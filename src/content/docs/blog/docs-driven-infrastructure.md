@@ -9,7 +9,7 @@ authors:
 
 ## The Problem
 
-Established infrastructure can often become a black box. You don't know how it was set up, and there is no documentation. The person who set it up isn't around to answer your questions or has forgotten the details because it's been five years. How can you set up new infastructure with goo documentation to go along with it?
+Established infrastructure can often become a black box. You don't know how it was set up, and there is no documentation. The person who set it up isn't around to answer your questions or has forgotten the details because it's been five years. How can you set up new infastructure with good documentation to go along with it?
 
 ## The Solution
 
