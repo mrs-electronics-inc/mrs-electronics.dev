@@ -11,7 +11,7 @@ authors:
 
 Over the past year, our team here at MRS had been working on solutions to two seemingly unrelated problems.
 
-First, some of our projects had grown from just one or two repositories in the beginning to sprawling groups of repos that posed a real challenge for **keeping governance and project management best practices in sync**. For example, when we began implementing [`pre-commit` hooks](https://pre-commit.com/index.html) as a standard part of projects, we had to copy the same code to each repo.
+First, some of our projects had grown from just one or two repositories in the beginning to sprawling groups of repos that posed a real challenge for **keeping project admin and management best practices in sync**. For example, when we began implementing [`pre-commit` hooks](https://pre-commit.com/index.html) as a standard part of projects, we had to copy the same code to each repo.
 
 Sometimes we were able to resolve this with other means. For example, we had implemented an automatic issue triaging bot in many projects with some custom JS code that ran in CI. A few months ago, we took its core concepts and created our simple [custom issue bot](https://github.com/mrs-electronics-inc/bots#issue-management-), which we then imported into each project. Now, the ROI for implementing new features for that bot is much higher because they are automatically applied to all projects instead of having to be ported from repo to repo.
 
@@ -23,13 +23,13 @@ Additionally, as you doubtless have discovered, the world of AI is moving _VERY_
 
 ## The Solution: Monorepos
 
-As you may have already guessed, our solution to these two problems has been to migrate our polyrepo projects to [**monorepos**](https://monorepo.tools/#what-is-a-monorepo).
+Our solution to these two problems has been to migrate our polyrepo projects to [**monorepos**](https://monorepo.tools/#what-is-a-monorepo).
 
 Frankly, this has **revolutionized** our per-repo workflows. GitLab/GitHub admin is simpler. Internal innovations are easily applied to multiple projects. The code changes for a feature that affects more than one part of the project (e.g. new password regex rules made in the frontend and backend for redundancy) can be applied simultaneously, in one MR, instead of requiring developers to create two MRs.
 
 ## The New Problem
 
-Clearly there are benefits to the monorepo approach, but there are also some drawbacks. For example, consider how you might design the CI pipeline for a monorepo. If every project had its own CI pipeline when it was in its own repo, how would those be merged together? (Stay tuned for a deeper discussion on this in a later post...) If every project has its suite of common development commands, managed in a [`justfile`](/blog/just-is-just-great), how will those work together in the monorepo?
+Clearly there are benefits to the monorepo approach, but there are also some drawbacks. For example, consider how you might design the CI pipeline for a monorepo. If every project had its own CI suite when it was in its own repo, how would those be merged together? (Stay tuned for a deeper discussion on this in a later post...) If every project has its suite of common development commands, managed in a [`justfile`](/blog/just-is-just-great), how will those work together in the monorepo?
 
 Additionally, now that we have this monorepo, how will we implement such potential advantages as build caching? If `App A` depends on `Lib A`, and `Lib A` has already been compiled, we don't want to recompile it every time we build `App A`. Speaking of which, what about dependency management? How will we define the dependency surface for `App A`? How will we _keep track_ of that dependency graph once it's been implemented?
 
@@ -37,7 +37,7 @@ Additionally, now that we have this monorepo, how will we implement such potenti
 
 Recently, we came upon a tool called [`moon`](https://moonrepo.dev/moon) that solves all of these new problems.
 
-`moon` is built to help teams efficiently and effectively manage monorepos. There are other tools out there for this, such as [`nx`](https://nx.dev) and [`turborepo`](https://turborepo.dev/) (which we would encourage you to try for yourself), but we chose `moon` because of its toolchain-agnostic nature. Where other tools are optimized for JS/TS-focused repos, `moon` is fully equipped to help with projects of all types. We are using it for Flutter mobile apps, embedded Qt/C++ apps and libraries, Go tools, and, yes, JS projects.
+`moon` is built to help teams efficiently and effectively manage monorepos. There are other tools out there for this, such as [`nx`](https://nx.dev) and [`turborepo`](https://turborepo.dev/) (which we would encourage you to try for yourself), but we chose `moon` because of its toolchain-agnostic nature and simplicity of setup. Where other tools are optimized for JS/TS-focused repos, `moon` is fully equipped to help with projects of all types. We are using it for Flutter mobile apps, embedded Qt/C++ apps and libraries, Go tools, and, yes, JS projects.
 
 ### Task Definition
 
