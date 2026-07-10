@@ -27,6 +27,8 @@ Instead of getting bogged down with feelings of failure about not reaching the f
 
 This concept doesn't just apply to new projects, it also works well for existing projects. TODO: explain.
 
+In the debate between "wait to act until you have clear direction" vs "act now, redo later if it turns out wrong", I'm a big proponent of the latter strategy. I think you learn a lot more along the way by prioritizing action. TODO: elaborate
+
 TODO: mention fighting back against procastination.
 
 ## Wrapping Up
