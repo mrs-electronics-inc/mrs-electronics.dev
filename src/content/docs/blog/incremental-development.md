@@ -12,5 +12,5 @@ authors:
 - MVP
 - Smalls wins
   - Dopamine hit
-  - Dave Ramsey's snowball method: small wins to build momentuem, rather than focusing on mathematical optimum
+  - Dave Ramsey's [debt snowball method](https://www.ramseysolutions.com/debt/how-the-debt-snowball-method-works): small wins to build momentuem, rather than focusing on mathematical optimum
 - Anti-procasintation methods
