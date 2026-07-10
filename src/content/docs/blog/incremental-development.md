@@ -7,10 +7,28 @@ authors:
   picture: https://avatars.githubusercontent.com/u/17209828?s=200
 ---
 
-## Ideas
+## Challenges
 
-- MVP
-- Smalls wins
-  - Dopamine hit
-  - Dave Ramsey's [debt snowball method](https://www.ramseysolutions.com/debt/how-the-debt-snowball-method-works): small wins to build momentuem, rather than focusing on mathematical optimum
-- Anti-procasintation methods
+TODO: describe the ease of procrastination
+TODO: describe challenges with juggling lots of projects
+TODO: software dev's equivalent to writer's block
+
+## MVP
+
+TODO: describe the basic concept of a minimal viable product. include sources
+
+TODO: describe how this can still be too big. it's easy to look at an MVP and get overwhelmed
+
+## Incremental Development
+
+TODO: expand on the MVP concept, but remove the "product" part, we want each change to be scoped as small as possible
+
+TODO: apply the concept to all projects, not just greenfield
+
+TODO: mention Dave Ramsey
+
+TODO: mention devleoping habits and processes that fight back against procastination
+
+## Wrapping Up
+
+TODO: pull it all together
