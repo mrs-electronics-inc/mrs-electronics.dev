@@ -21,16 +21,18 @@ There's a common term in software engineering projects - the MVP. Not the most v
 
 ## Incremental Development
 
-As software engineers, I think we can get a lot of value from taking the MVP concept but applying it to our day-to-day development. Remove the "product" and replace it with "change". What is the minimum valuable change I can make to make some progress towards the project goals? Where can I incrementally move forward, even if it means I'm still far from "finished"? How do I avoid feeling like a failure when there's still a long ways to go?
+As software engineers, I think we can get a lot of value from taking the MVP concept but applying it to our day-to-day development. Remove the "product" and replace it with "change". What is the minimum valuable change I can make to make some progress towards the project goals? Where can I incrementally move forward, even if it means I'm still far from "finished"? How do I avoid feeling like a failure when there's still a long way to go?
 
 Instead of getting bogged down with feelings of failure about not reaching the final goal yet, focus on the small wins you can make along the way. As you add up these small wins, you can build momentum, and suddenly you are rushing towards the goals at great speed! Imagine your development process as a snowball rolling down a snow-covered mountain, adding diameter micrometer by micrometer. Dave Ramsey calls his method for getting out of debt the ["snowball method"](https://www.ramseysolutions.com/debt/how-the-debt-snowball-method-works) for this very reason - it's not about taking the mathematically most efficient route to the end goal, it's about building momentum through small wins. Our brains don't work as mathematical machines. We want to optimize our habits, strategies, and processes to match the psychology behind motivation.
 
-This concept doesn't just apply to new projects, it also works well for existing projects. TODO: explain.
+Incremental development is also a great way to fight back against procrastination. It's much easier to start on a two hour task than it is to start on a two week task. The process of breaking things down can be a great way to get the creative juices flowing again and push past "writer's block".
 
-In the debate between "wait to act until you have clear direction" vs "act now, redo later if it turns out wrong", I'm a big proponent of the latter strategy. I think you learn a lot more along the way by prioritizing action. TODO: elaborate
+This concept doesn't just apply to new projects, it also works well for existing projects. Whether it's a new feature or a large redesign, the process of breaking the change into bite-size pieces will reap huge dividends, both in your motivation and productivity.
 
-TODO: mention fighting back against procastination.
+In the debate between "wait to act until you have clear direction" vs "act now, redo later if it turns out wrong", I'm a big proponent of the latter strategy. I think you learn a lot more along the way by prioritizing action. The process of doing something "wrong" will help you gain more clarity on how to do it better.
+
+It's also important to remember "perfect is the enemy of good". Often we can get stuck behind the idea of "to do it 'right' will take six months" so we never get started at all. The customer doesn't need a perfect solution that never gets shipped, they need the good solution you can ship quickly! Often times you might have to accrue a bit of technical debt to get started. Don't freak out! It's quite likely that your picture of the "ideal design" will morph several times as you work through some subpar solutions. It's much more useful to have a hacky prototype that gets you moving than to get stuck on the perfect design that never happens. Embrace the process of prototype, feedback, iteration, repeat.
 
 ## Wrapping Up
 
-TODO: pull it all together
+How do you eat an elephant? One bite at a time. It's easy to feel overwhelmed as you consider a large project. Make it easier on yourself by breaking it down. Keep recursively breaking it down, until you have a bunch of pieces that won't take more than two days each to implement. Then get going, rolling your snowball down the mountain!
