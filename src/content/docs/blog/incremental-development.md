@@ -1,6 +1,6 @@
 ---
 title: Incremental Development
-date: 2026-07-10
+date: 2026-07-13
 authors:
   name: Addison Emig
   title: Lead Software Engineer
