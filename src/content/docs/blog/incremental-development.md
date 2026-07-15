@@ -1,0 +1,38 @@
+---
+title: Incremental Development
+date: 2026-07-13
+authors:
+  name: Addison Emig
+  title: Lead Software Engineer
+  picture: https://avatars.githubusercontent.com/u/17209828?s=200
+---
+
+## Challenges
+
+It's easy for software engineers to procrastinate. There's some task that needs to be completed for a project, but it looks overwhelming, and you've got lots of other things to work on. So you put it off for a little while longer. When you finally get to it weeks (or months) later, you've entirely lost all context on what's going on, and you lose even more time getting back up to speed.
+
+It's easy to lose context when juggling lots of projects. You prepare some great design for a project, then some higher priority projects come up, and you don't come back for months. When you re-read your spec again, you begin to get a sinking feeling: "uggh, that's going to take a lot of work".
+
+It's also easy to get "writer's block". You have a great spec, you have all the context, but you have no idea where to start. So you put it off and jump over to another project, starting the whole cycle of procrastination over again.
+
+## MVP
+
+There's a common term in software engineering projects - the MVP. Not the most valuable player, but the minimum viable product. [Kent Beck](https://newsletter.kentbeck.com/p/minimum-viable-product-revisited) defines the MVP as "what I need to make in order to learn something valuable". What is the bare minimum useful thing we can implement and send to customers for feedback? This is essential for quick iteration towards a high-quality product. You don't want to implement a huge project and then realize you went the wrong way at the first fork in the road.
+
+## Incremental Development
+
+As software engineers, I think we can get a lot of value from taking the MVP concept but applying it to our day-to-day development. Remove the "product" and replace it with "change". What is the minimum valuable change I can make to make some progress towards the project goals? Where can I incrementally move forward, even if it means I'm still far from "finished"? How do I avoid feeling like a failure when there's still a long way to go?
+
+Instead of getting bogged down with feelings of failure about not reaching the final goal yet, focus on the small wins you can make along the way. As you add up these small wins, you can build momentum, and suddenly you are rushing towards the goals at great speed! Imagine your development progress as a snowball rolling down a snow-covered mountain, growing and growing as it goes. Dave Ramsey calls his method for getting out of debt the ["snowball method"](https://www.ramseysolutions.com/debt/how-the-debt-snowball-method-works) for this very reason - it's not about taking the mathematically most efficient route to the end goal, it's about building momentum through small wins. Our brains don't work as mathematical machines. We want to optimize our habits, strategies, and processes to match the psychology behind motivation.
+
+Incremental development is also a great way to fight back against procrastination. It's much easier to start on a two hour task than it is to start on a two week task. The process of breaking things down can be a great way to get the creative juices flowing again and push past "writer's block".
+
+This concept doesn't just apply to new projects, it also works well for existing projects. Whether it's a new feature or a large redesign, the process of breaking the change into bite-size pieces will reap huge dividends, both in your motivation and productivity.
+
+In the debate between "wait to act until you have clear direction" versus "act now, redo later if it turns out wrong", I'm a big proponent of the latter strategy. I think you learn a lot more along the way by prioritizing action. The process of doing something "wrong" will help you gain more clarity on how to do it better.
+
+It's also important to remember "perfect is the enemy of good". Often we can get blocked by the idea of "to do it _right_ will take six months", so we never get started at all. The customer doesn't need a perfect solution that never gets shipped, they need the good solution you can ship quickly! Often times you might have to accrue a bit of technical debt to get started. Don't freak out! It's quite likely that your picture of the "ideal design" will morph several times as you work through some subpar solutions. It's much more useful to have a hacky prototype that gets you moving than to get stuck on the perfect design that never happens. Embrace the process of prototype, feedback, iteration, repeat.
+
+## Wrapping Up
+
+How do you eat an elephant? One bite at a time. It's easy to feel overwhelmed as you consider a large project. Make it easier on yourself by breaking it down. Keep recursively breaking it down, until you have a bunch of pieces that won't take more than two days each to implement. Then get going, rolling your snowball down the mountain!
