@@ -15,7 +15,7 @@ The main focus of "spike-driven development" is exploration. You aren't going to
 
 To start out, introduce the goal of your [spike](<https://en.wikipedia.org/wiki/Spike_(software_development)>) to your coding agent of choice. Try to keep the goal narrow and focused, [MVP-style](/blog/incremental-development/#mvp). Ask the agent to explore your existing codebase (if you have one) to anchor the new code into the existing patterns and examples.
 
-The coding part is simple. Ask the agent to develop the spike end-to-end, from feature branch to merge request. You don't want to look at anything until the merge request is ready for your review. Don't worry about baby-sitting the agent. "Spike-driven development" is great for firing something off in the background and then switching to work on something that requires more focused attention.
+The coding part is simple. Ask the agent to develop the spike end-to-end, from feature branch to merge request. You don't want to look at anything until the merge request is ready for your review. Don't worry about babysitting the agent. "Spike-driven development" is great for firing something off in the background and then switching to work on something that requires more focused attention.
 
 ## Revisions
 
