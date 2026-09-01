@@ -33,7 +33,7 @@ Hopefully at this point you have a much clearer idea of the shape and size of th
 
 1. Throw the code away and start fresh. Code is cheap. Don't feel attached to the code. Now that you have a better idea of the design decisions you want to make, you can sit down and write a clearer spec and proceed from there.
 2. If the code changes are small, you can do a bit of cleanup and ship it. Oftentimes I am surprised by how little code it takes to implement a desired change.
-3. If the code changes are large, split it up into a series of merge requests. There is no reason you should merge your original feature branch with thousands of lines of diffs into `main`. Work through a plan with your agent to split it up into a series of much smaller merge requests which you can review one by one. You shouldn't have to do any of the `git` wrangling yourself. Your agent already is an expert with `git`. You'll probably learn a lot reviewing the diffs of each merge request.
+3. If the code changes are large, split it up into a series of merge requests; there is no reason you should merge your original feature branch with thousands of lines of diffs into `main`. Work through a plan with your agent to split it up into a series of much smaller merge requests which you can review one by one. Your agent already is an expert with `git`, so you shouldn't have to do any of the `git` wrangling yourself. You'll probably learn a lot reviewing the diffs of each merge request.
 
 ## Continuing On
 
